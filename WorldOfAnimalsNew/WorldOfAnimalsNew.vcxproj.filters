@@ -39,6 +39,15 @@
     <ClCompile Include="Lion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NorthAmerica.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bison.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wolf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Continent.h">
@@ -62,5 +71,22 @@
     <ClInclude Include="Lion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="NorthAmerica.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bison.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wolf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WorldOfAnimalsNew.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

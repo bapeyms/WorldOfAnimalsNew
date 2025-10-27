@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Africa.h"
+#include "NorthAmerica.h"
 #include "WorldOfAnimals.h"
 using namespace std;
 
@@ -17,7 +18,17 @@ int main()
 	africa.ShowAfricaAnimals();
 	cout << endl;
 
-	WorldOfAnimals world(&africa);
+	NorthAmerica northAmerica;
+	northAmerica.PrintName();
+	Bison* b1 = new Bison();
+	Wolf* wolf1 = new Wolf();
+	Bison* b2 = new Bison(500.0, true);
+	Wolf* wolf2 = new Wolf(70.0);
+	northAmerica.AddPairOfNorthAmericaAnimals(b1, wolf1);
+	northAmerica.AddPairOfNorthAmericaAnimals(b2, wolf2);
+
+	WorldOfAnimals world(&africa, &northAmerica);
+
 	cout << "-- HERBIVORE MEAL --" << endl;
 	world.MealsHerbivore();
 	cout << endl;
@@ -27,7 +38,10 @@ int main()
 	cout << endl;
 
 	cout << "-- ALL ANIMALS --" << endl;
+	cout << "- AFRICA -" << endl;
 	africa.ShowAfricaAnimals();
+	cout << "- NORTH AMERICA -" << endl;
+	northAmerica.ShowNorthAmericaAnimals();
 
 	return 0;
 }
